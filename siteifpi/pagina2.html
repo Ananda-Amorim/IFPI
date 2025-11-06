@@ -9,7 +9,7 @@
 <body>
     <header>
         <ul>
-            <li><a href="pagina2.html">Efetuar matrícula</a></li>
+            <li><a href="#home">Efetuar Matrícula</a></li>
             <li><a href="#home">Como Ingressar</a></li>
             <li class="dropdown">
                 <a class="dropbtn">Cursos</a>
@@ -20,23 +20,35 @@
                     <a href="#">Mineração</a>
                 </div>
             </li>
-            <li><a href="#home">Início</a></li>
+            <li><a href="index.html">Início</a></li>
         </ul>
     </header>
     <main>
         <div class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 20px;">
-            <div class="left" style="flex: 1; padding-right: 40px;">
-                <h2>Estude na melhor escola!</h2>
-                <p>O IFPI é uma escola de educação superior, básica e profissional, pluricurricular e multicampi.</p>
-                <p>Possui várias sedes que proporcionam educação de qualidade em diferentes regiões do Piauí.</p>
-
-                <h2>No IFPI você terá acesso a:</h2>
-                <ul>
-                    <li> Excelente infraestrutura, professores qualificados e laboratórios para práticas. </li>
-                </ul>
-            </div>
+            <form class="matricula-box" action="#" method="post" autocomplete="off" style="flex: 1; padding-right: 40px;">
+                <h3>Matrícula de Alunos</h3>
+                <div class="form-row">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" name="nome" type="text" placeholder="Digite seu nome">
+                </div>
+                <div class="form-row">
+                    <label for="email">E-mail:</label>
+                    <input id="email" name="email" type="email" placeholder="seu@email.com">
+                </div>
+                <div class="form-row">
+                    <label for="nasc">Data de Nascimento:</label>
+                    <input id="nasc" name="nascimento" type="text" placeholder="dd/mm/aaaa">
+                </div>
+                <div class="form-row">
+                    <label for="senha">Senha:</label>
+                    <input id="senha" name="senha" type="password">
+                </div>
+                <div class="actions" style="margin-top: 15px;">
+                    <button class="btn-confirm" type="submit">Confirmar</button>
+                </div>
+            </form>
             <div class="right" style="flex: 1; text-align: center;">
-                <img src="logo-ifpi.png" alt="Logo IFPI" width="230">
+                <img src="logo-ifpi.png" alt="Logo IFPI" width="250">
             </div>
         </div>
     </main>
@@ -52,9 +64,9 @@
                 <h4>Mapa do Site</h4>
                 <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px;">
                     <li><a href="index.html">Início</a></li>
-                    <li><a>Cursos</a></li>
-                    <li><a href="pagina2.html">Matricula</a></li>
-                    <li><a>Como Ingressar</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Matrícula</a></li>
+                    <li><a href="#">Como Ingressar</a></li>
                 </ul>
             </div>
         </div>
